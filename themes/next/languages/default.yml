@@ -1,0 +1,54 @@
+title:
+  archive: Archive
+  category: Category
+  tag: Tag
+
+menu:
+  home: Home
+  archives: Archives
+  tags: Tags
+  about: About
+
+sidebar:
+  overview: Overview
+  toc: Table Of Contents
+
+post:
+  posted: Posted on
+  read_more: Read more
+  untitled: Untitled
+  toc_empty: This post does not have a Table Of Contents
+
+page:
+  totally: Totally
+  tags: tags
+
+footer:
+  powered: "Powered by %s"
+  theme: Theme
+
+counter:
+  tag_cloud:
+    zero: No tags
+    one: 1 tag in total
+    other: "%d tags in total"
+
+  archive_posts:
+    zero: No posts.
+    one: 1 post.
+    other: "%d posts in total."
+
+state:
+  posts: posts
+  pages: pages
+  tags: tags
+
+cheers:
+  um: Um..
+  ok: OK
+  nice: Nice
+  good: Good
+  great: Great
+  excellent: Excellent
+
+keep_on: Keep on posting.

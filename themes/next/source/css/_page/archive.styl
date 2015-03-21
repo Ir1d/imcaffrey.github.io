@@ -1,0 +1,62 @@
+.use-motion {
+  .post {
+    opacity: 0;
+  }
+}
+
+.page-archive {
+
+  $left = 55px;
+  $left-mobile = 5px;
+
+  .archive-page-counter {
+    position: relative;
+    top: 3px;
+    left: 70px;
+
+    +mobile() {
+      top: 5px;
+      left: $left-mobile + 10px;
+    }
+  }
+
+  .posts-collapse {
+    position: relative;
+
+    &::after {
+      top: 20px;
+      left: $left;
+      margin-left: -2px;
+      width: 4px;
+      height: 100%;
+      background: $whitesmoke;
+      z-index: $zindex-bottom;
+
+      +mobile() {
+        left: $left-mobile;
+      }
+    }
+
+    .archive-move-on {
+      position: absolute;
+      top: 11px;
+      left: $left;
+      margin-left: -6px;
+      width: 10px;
+      height: 10px;
+      opacity: 0.5;
+      background: $black-light;
+      border: 1px solid white;
+
+      circle();
+      +mobile() {
+        left: $left-mobile;
+      }
+    }
+
+    &::before, &::after {
+      content: " ";
+      position: absolute;
+    }
+  }
+}
