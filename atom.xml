@@ -1,37 +1,43 @@
+---
+limit: 25
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
-  <title>SCaffrey's Blog</title>
-  <generator uri="https://github.com/jekyll/jekyll">Jekyll v2.4.0</generator>
-    <icon>/apple-touch-icon-precomposed.png</icon>
-  <subtitle>A~Memory~Keeper</subtitle>
-  <link href="/atom.xml" rel="self"/>
-  <link href="/" rel="alternate" type="text/html"/>
-  <updated>2015-03-21T12:01:49+08:00</updated>
-  <id>/</id>
+{% if site.url %}
+  {% assign base = site.url %}
+{% elsif site.github.url %}
+  {% assign base = site.github.url %}
+{% endif %}
+  <title>{{ site.title }}</title>
+  <generator uri="https://github.com/jekyll/jekyll">Jekyll v{{ jekyll.version }}</generator>
+    <icon>{{ site.url }}/apple-touch-icon-precomposed.png</icon>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ base }}{{ page.url }}" rel="self"/>
+  <link href="{{ base }}/" rel="alternate" type="text/html"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ base }}/</id>
   <author>
-    <name>SCaffrey</name>
-    <uri>/</uri>
-    <email>imcaffrey#126.com</email>
+    <name>{{ site.owner.name | xml_escape }}</name>
+    <uri>{{ site.url }}/</uri>
+    {% if site.owner.email %}<email>{{ site.owner.email }}</email>{% endif %}
   </author>
 
-  
+  {% for post in site.posts limit: page.limit %}
   <entry>
-    <title>Hello World</title>
-    <link href="/oi/hello-world/"/>
-    <updated>2015-03-21T00:00:00+08:00</updated>
-    <id>/oi/hello-world</id>
+    <title>{{ post.title | xml_escape }}</title>
+    <link href="{{ base }}{{ post.url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>{{ base }}{{ post.id }}</id>
     <author>
-      <name>SCaffrey</name>
-      <uri>/</uri>
-      <email>imcaffrey#126.com</email>
+      <name>{{ site.owner.name | xml_escape }}</name>
+      <uri>{{ site.url }}/</uri>
+      {% if site.owner.email %}<email>{{ site.owner.email }}</email>{% endif %}
     </author>
     <content type="html">
-      &lt;img src=&quot;/images/hello-world.jpg&quot;&gt;&lt;br/&gt;
-      
+      {% if post.image.feature %}&lt;img src=&quot;{{ site.url }}/images/{{ post.image.feature }}&quot;&gt;&lt;br/&gt;{% endif %}
+      {{ post.content | xml_escape }}
     </content>
   </entry>
-  
-  
+  {% endfor %}
   
 </feed>
