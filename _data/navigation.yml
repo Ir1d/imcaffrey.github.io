@@ -4,6 +4,9 @@
   url: /
   excerpt:
   image:
-  
+
 - title: OI
-  url: /OI/
+  url: /oi/
+
+- title: Story
+  url: /story/

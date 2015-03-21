@@ -1,11 +1,11 @@
 ---
 layout: archive
-title: "Latest Posts in OI"
-excerpt: "My story of OI"
+title: "The story of Life"
+excerpt: "Noting down various ideas"
 ---
 
 <div class="tiles">
-{% for post in site.categories.oi %}
+{% for post in site.categories.story %}
 	{% include post-grid.html %}
 {% endfor %}
 </div><!-- /.tiles -->

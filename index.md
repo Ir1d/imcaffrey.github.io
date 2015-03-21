@@ -2,6 +2,9 @@
 layout: archive
 permalink: /
 title: "Latest Posts"
+image:
+    feature: aurora.jpeg
+    credit: Google
 ---
 
 <div class="tiles">

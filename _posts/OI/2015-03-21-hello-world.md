@@ -3,12 +3,12 @@ layout: article
 title: Hello World
 
 comments: true
-date: 2015/3/21 13:41:58
-category: OI
+date: 2015-3-21 14:32:36
+categories: oi
 image:
     teaser: /teaser/hello-world.jpg
 ---
-
+>* Hello World
 
 
 Hi friends.
