@@ -5,7 +5,7 @@ excerpt: "My story of OI"
 ---
 
 <div class="tiles">
-{% for post in site.categories.jekyll %}
+{% for post in site.categories.OI %}
 	{% include post-grid.html %}
 {% endfor %}
 </div><!-- /.tiles -->

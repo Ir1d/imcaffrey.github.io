@@ -4,7 +4,9 @@ title: Hello World
 
 comments: true
 date: 2015/3/21 13:41:58
-categories: OI
+category: OI
+image:
+    teaser: /teaser/hello-world.jpg
 ---
 
 
