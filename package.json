@@ -1,19 +1,18 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
-  "hexo": {
-    "version": "3.0.0"
-  },
-  "dependencies": {
-    "hexo": "^3.0.0",
-    "hexo-generator-archive": "^0.1.0",
-    "hexo-generator-category": "^0.1.0",
-    "hexo-generator-index": "^0.1.0",
-    "hexo-generator-tag": "^0.1.0",
-    "hexo-renderer-ejs": "^0.1.0",
-    "hexo-renderer-stylus": "^0.2.0",
-    "hexo-renderer-marked": "^0.2.4",
-    "hexo-server": "^0.1.2"
+  "name": "skinny-bones-jekyll",
+  "version": "0.0.1",
+  "description": "A Jekyll starter site",
+  "author": "Michael Rose <michael@mademistakes.com>",
+  "homepage": "http://mademistakes.com/",
+  "license": "The MIT License (MIT)",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-imagemin": "~0.5.0",
+    "grunt-svgmin": "~0.3.1",
+    "grunt-imgcompress": "~0.1.1",
+    "grunt-newer": "^0.7.0"
   }
 }

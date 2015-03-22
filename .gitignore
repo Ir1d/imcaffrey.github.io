@@ -1,7 +1,8 @@
+_site
 .DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules/
-public/
-.deploy*/
+*.sublime-project
+*.sublime-workspace
+codekit-config.json
+node_modules
+_asset_bundler_cache
+.sass-cache
