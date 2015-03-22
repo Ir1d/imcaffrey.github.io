@@ -4,7 +4,7 @@ title: Project-Euler记录
 
 comments: true
 date: 2015-3-22 9:54:37
-categories: OI
+categories: oi
 image:
     teaser: /teaser/hello-world.jpg
 ---
