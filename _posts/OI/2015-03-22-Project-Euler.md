@@ -6,19 +6,10 @@ comments: true
 date: 2015-3-22 9:54:37
 categories: oi
 image:
-    teaser: /teaser/hello-world.jpg
+    teaser: /teaser/euler_portrait.png
 ---
->* Hello World
+>* A collection of my training with Project Euler
 
-
-Hi friends.
-
-Welcome to this site.
-
-This will be A~Memory~Keeper as Caffrey makes his way through OI
-
-I promise to fight harder to make our dreams come true!
-
-#Yes,We,Can
+前10题比较水啦，就不打出来了
 
 ##:)
