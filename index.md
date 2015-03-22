@@ -5,6 +5,7 @@ title: "Latest Posts"
 image:
     feature: Aurora.jpeg
     credit: Google
+
 ---
 
 <div class="tiles">

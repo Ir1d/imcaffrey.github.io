@@ -6,6 +6,7 @@ logo: logo.jpg # 120x120 px default image used for Twitter summary card
 teaser: teaser/default.jpg # 400x250 px default teaser image used in image archive grid
 locale:
 url:
+google-site-verification: nNPe3u4kc8aN6_hE20AA9j9ztjDbR0XDKdvvRsIFNPM
 
 # Jekyll configuration
 
