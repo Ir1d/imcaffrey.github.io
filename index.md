@@ -3,7 +3,7 @@ layout: archive
 permalink: /
 title: "Latest Posts"
 image:
-    feature: aurora.jpeg
+    feature: Aurora.jpeg
     credit: Google
 ---
 
